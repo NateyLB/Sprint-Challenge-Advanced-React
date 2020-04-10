@@ -1,18 +1,18 @@
 import React, { useEffect } from "react"
 import useLocalStorage from "./useLocalStorage.js";
 
-const useDarkMode = () =>{
+const useBlueMode = () =>{
     //st a state for dark mode, initial is false
-    const [value, setValue] = useLocalStorage("darkMode", false )
+    const [value, setValue] = useLocalStorage("blueMode", false )
     //if darkMode state id true then toggle dark mode watches updates
     //to darkMode state
     useEffect(()=>{
         var body = document.querySelector('body')
         if(value === true){
-            body.classList.add("dark-mode")
+            body.classList.add("blue-mode")
         }
         else{
-            body.classList.remove("dark-mode")
+            body.classList.remove("blue-mode")
         }
 
     },[value])
@@ -23,4 +23,4 @@ const useDarkMode = () =>{
     
 
 
-export default useDarkMode;
+export default useBlueMode;

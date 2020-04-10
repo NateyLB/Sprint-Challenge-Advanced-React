@@ -51,6 +51,18 @@ align-items: center;
   position: relative;
   width: 40px;
 }
+.blue-mode__toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.blue-mode {
+  color:rgb(40, 169, 243);
+}
 
 .toggle {
   background: #f68819;
