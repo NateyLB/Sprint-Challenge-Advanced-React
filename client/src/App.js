@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from "./Components/Navbar.jsx"
 import Cards from "./Components/Cards.js"
 
-
+var arr=[]
 
 class App extends React.Component {
   constructor(){
@@ -16,14 +16,15 @@ class App extends React.Component {
 componentDidMount(){
   axios.get(`http://localhost:5000/api/players`)
   .then( response => {
-    console.log(response.data)
     this.setState({data: response.data})
   })
   .catch(error => {
     console.log("No data recieved", error)
 });
 }
-
+componentDidUpdate(){
+  arr=this.state.data
+}
 render(){
   return (
     <div className="App">

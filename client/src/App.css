@@ -87,6 +87,6 @@ align-items: center;
 .card{
   border: 2px solid black;
   border-radius: 10px; 
-  width: 40%;
+  width: 25%;
   margin: 2% 0%
 }

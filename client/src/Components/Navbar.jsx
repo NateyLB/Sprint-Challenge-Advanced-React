@@ -24,6 +24,7 @@ const Navbar = () => {
         <p>Dark Mode </p>
       <div className="dark-mode__toggle">
         <div
+        data-testid="dark"
           onClick={toggleDarkMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
           />
@@ -33,6 +34,7 @@ const Navbar = () => {
       <p>Blue Mode</p>
       <div className="blue-mode__toggle">
         <div
+        data-testid="blue"
           onClick={toggleBlueMode}
           className={blueMode ? 'toggle toggled' : 'toggle'}
           />
